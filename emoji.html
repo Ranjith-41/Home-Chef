@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Feedback Form</title>
+    <link rel="stylesheet" href="emojistyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <p>How was your experience?</p>
+        <form id="feedback-form">
+            <div class="emoji-rating">
+                <input type="radio" name="rating" id="terrible" value="terrible">
+                <label for="terrible">😠</label>
+                
+                <input type="radio" name="rating" id="bad" value="bad">
+                <label for="bad">😞</label>
+                
+                <input type="radio" name="rating" id="okay" value="okay">
+                <label for="okay">😐</label>
+                
+                <input type="radio" name="rating" id="good" value="good">
+                <label for="good">😊</label>
+                
+                <input type="radio" name="rating" id="excellent" value="excellent">
+                <label for="excellent">😍</label>
+            </div>
+            
+            <textarea name="comments" id="comments" placeholder="Leave your comments here..." rows="4"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    
+}
+#navbar{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 5px 5px;
+    box-shadow:5px 5px 20px rgba(0,0,0,0.5);
+    background-color: black!important;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight:800;
+    color: orange!important;
+    letter-spacing: 1px;
+    margin-left:5px;
+}
+#navbarSupportedContent a{
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    color:orange;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent button{
+    background-color: greenyellow;
+    color:black;
+    border-radius: 20px;
+}
+#one{
+    border: 5px solid transparent;
+    padding:15px;
+    margin:15px;
+    background:url(image/bg.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    color: #ffffff7c;
+    height:60vh;
+    width: 97%;
+    text-align: center;
+    display: flex;
+    
+}
+.search{
+    padding-right:35px;
+}
+.cart-icon{
+    color: orange !important;
+    cursor: pointer;
+}
+.cart{
+    position:fixed;
+    top: -5px;
+    left: 95%;
+    right: 10px;
+    width: 360px;
+    min-height: 100vh;
+    padding:20px;
+    background: var(--bg-color);
+    cursor: pointer;
+
+}
+.cart .quantity{
+    background-color:red;
+    color: white;
+    font-weight: 800;
+    border-radius: 50%;
+    padding:0 10px;
+    position: absolute;
+    top:10px;
+    left:40px;
+}
+.cart-title{
+    text-align:center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart1{
+    
+    min-height: 600px;
+    max-height:600px;/* Set a maximum height */
+    overflow-y: auto; 
+    position: fixed;
+    top:50px;
+    left:70%;
+    width: 400px;
+    /*background-color:gray;*/
+    background: url("image/bg9.jpg");
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+.cart1 h3,
+.productlist div {
+    font-family: 'Roboto', sans-serif; /* Keep it consistent */
+}
+.cart1 h3{
+    font-weight: 800;
+    text-align: center;
+    color:white;
+    margin-top:10px;
+}
+.productlist{
+    font-weight: 800;
+   flex-grow: 1;
+    padding:10px;
+    overflow-y: auto;
+}
+.cart1 .checkout{
+   
+    position: fixed;
+    bottom:0;
+    right:0;
+    width:405px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.cart1 .checkout div{
+    width: 100%;
+    height:60px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:beige;
+}
+.cart1 .checkout .order{
+    background-color:orange;
+    color: white;
+}
+.cart1 .checkout .total{
+    background-color: white;
+    color: black;
+}
+.cart1{
+    display:none;
+
+}
+.cart1.active {
+    display:block;
+}
+#two{
+    padding: 10px;
+    margin: top 20px;
+    flex-wrap: wrap;
+    
+}
+#two h1{
+    font-weight: 700
+}
+#two p{
+    margin-top: 40px;
+    font-size:20px;
+    font-weight: 700;
+    justify-content: center;
+    text-align:justify;
+}
+#drop{
+    color: #fff!important;
+    border-bottom: 2px solid transparent;
+    background-color: black!important;
+    
+}
+#down a{
+    color: #fff!important;
+}
+#down a:hover{
+    color: orange!important;
+
+}
+.carousel-item img{
+    height:350px;
+}
+#temp{
+    font-weight: 800;
+    font-size:larger;
+}
+body{
+    /*background-color:#ffebcd!important;*/
+    background: url(image/bg1.jpg)!important;
+   
+}
+#about{
+    background: url(image/bg1.jpg)!important;
+}
+#mission{
+    text-shadow: #000000c4;
+    text-shadow: hsla(0, 0%, 0%, 0.678);
+    text-shadow: hwb(0 0% 100% / 0.877);
+    color:#fff;
+    font-weight: 800;
+}
+/*BREAKFAST*/
+button{
+    background: transparent;
+    color:white;
+    border:none;
+}
+#breakfast{
+    /*background-color: #e5e5e5;*/
+   /* background: url(bg2.jpg);*/
+    margin-left:20px;
+    margin-right: 20px;
+    font-weight: 700;
+    border-radius: 20px solid white!important;
+   
+
+}
+hr{
+    color: #fff!important;
+    font-weight: 600!important;
+}
+#breakfast h1{
+    font-size: 50px;
+    font-family: "Dancing Script", cursive!important;
+    
+    letter-spacing: 2px;
+    font-weight: 700;
+    color:white;
+}
+#breakfast img{
+    width: 200px;
+    height:200px;
+    border-radius: 20px!important;
+}
+.poori img{
+ width:fit-content;
+ height: fit-content;
+}
+.card{
+    width: 250px;
+    height: 300px!important;
+    padding: 5px;
+    font-weight: 700!important;
+
+    background-color: #e5e5e5!important;
+    border: none!important;
+    box-shadow:15px 20px 20px rgba(0, 0, 0, 0.3),
+               inset 4px 4px 10px white!important;
+    border-radius: 20px!important;
+    overflow: hidden;
+    justify-content: center!important;
+    align-items: center;
+    margin: 20px 60px;
+    background:url(image/bg2.jpg);
+}
+.card:hover{
+    z-index: 1;
+    box-shadow:15px 20px 20px rgba(0, 0, 0,0.5),
+               inset 4px 4px 10px white!important;
+    transform: scale(1.05);
+
+}
+#lunch{
+   /*background-color:  #e5e5e5;*/
+    margin-left:20px;
+    margin-right: 20px;
+    margin-top: 5px;
+   /* background: url(bg5.jpg);*/
+    color: #fff;
+
+}
+#lunch h1{
+    margin-top: 10px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color:white;
+    font-family: "Dancing Script", cursive!important;
+    
+}
+#lunch img{
+    width: 200px;
+    height:200px;
+    border-radius: 20px!important;
+    overflow: hidden;
+}
+.card.lunch{
+    width: 250px;
+    height: 300px!important;
+    padding: 5px;
+    color: black!important;
+
+    background-color: #e0ffe0!important;
+    border: none!important;
+    box-shadow:15px 20px 20px black,
+               inset 2px 2px 5px white!important;
+    border-radius: 20px!important;
+    overflow: hidden;
+    justify-content: center!important;
+    align-items: center;
+    margin: 20px 60px;
+    /*background: url(bg8.jpg);*/
+}
+.lunch.card:hover{
+    z-index: 1;
+    box-shadow:15px 20px 20px rgba(0, 0, 0,0.7),
+               inset 4px 4px 10px black!important;
+    transform: scale(1.05);
+
+}
+#dinner{
+    /*background-color:  #e0ffe0;*/
+    margin-left:20px;
+    margin-right:20px;
+    margin-top: 5px;
+    /*background: url(bg6.jpg);*/
+    color: #fff;
+    border-color: #fff!important;
+    
+
+}
+#dinner h1{
+    margin-top: 10px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color:white;
+    font-family: "Dancing Script", cursive!important;
+    
+
+}
+#dinner img{
+    width: 200px;
+    height:200px;
+    border-radius: 20px!important;
+    overflow: hidden;
+}
+.card.dinner{
+    width: 250px;
+    height: 300px!important;
+    padding: 5px;
+    color: black!important;
+
+    background-color: #e0ffe0!important;
+    border: none!important;
+    box-shadow:15px 20px 20px rgba(0, 0, 0, 0.5),
+               inset 2px 2px 5px black!important;
+    border-radius: 20px!important;
+    overflow: hidden;
+    justify-content: center!important;
+    align-items: center;
+    margin: 20px 60px;
+    background: url(image/bg7.jpg);
+}
+.dinner.card:hover{
+    z-index: 1;
+    box-shadow:15px 20px 20px rgba(0, 0, 0,0.7),
+               inset 4px 4px 10px black!important;
+    transform: scale(1.05);
+
+}
+#special{
+   /* background-color:  #e0ffe0;*/
+    margin-left:20px;
+    margin-top: 5px;
+    /*background: url(bg7.jpg);*/
+    color: #fff;
+
+}
+#special h1{
+    margin-top: 10px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color:white;
+    font-family: "Dancing Script", cursive!important;
+}
+#special img{
+    width: 200px;
+    height:200px;
+    border-radius: 20px!important;
+    overflow: hidden;
+}
+.card.special{
+    width: 250px;
+    height: 300px!important;
+    padding: 5px;
+    color: #fff!important;
+
+    background-color: #e0ffe0!important;
+    border: none!important;
+    box-shadow:15px 20px 20px rgba(0, 0, 0, 0.5),
+               inset 2px 2px 5px black!important;
+    border-radius: 20px!important;
+    overflow: hidden;
+    justify-content: center!important;
+    align-items: center;
+    margin: 20px 60px;
+    background: url(image/bg6.jpg);
+}
+.special.card:hover{
+    z-index: 1;
+    box-shadow:15px 20px 20px rgba(0, 0, 0,0.7),
+               inset 4px 4px 10px black!important;
+    transform: scale(1.05);
+
+}
+#breakfast .btn{
+    background-color:orange!important;
+    border-radius: 20px;
+
+}
+#lunch .btn{
+    background-color:orange!important;
+    border-radius: 20px;
+
+}
+#dinner .btn{
+    background-color:orange!important;
+    border-radius: 20px;
+
+}
+#special .btn{
+    background-color:orange!important;
+    border-radius: 20px;
+
+}
+.contact{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(image/bg1.jpg)!important;
+  
+}
+.contact-info{
+   justify-content:space-around;
+   align-items: center;
+}
+
+.five{
+   margin-top: 5%;
+    position: relative;
+    top: 20;
+    left: 10;
+    text-align:start;
+}
+.contact img{
+    
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    align-content: space-around;
+}
+.social-media a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+   
+    margin: 10px;
+}
+.social-media a:hover {
+    color:greenyellow;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 10px;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 10px;
+  }
+  .fa-instagram {
+    background:white;
+    color: rgb(214, 27, 27);
+    border-radius: 10px;
+  }
+  footer{
+    margin: 10px;
+    background-color: black;
+    color: orange;
+    
+  }
+  .footer-bottom{
+    margin: 2px;
+  }
